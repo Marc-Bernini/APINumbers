@@ -12,9 +12,9 @@ router.use(bodyParser.urlencoded({
 router.use(bodyParser.json());
 
 router.get('/', (req, res) => {
-    const number = req.query.number;
+    const number = req.query.number; // Get user's number in the URL
   
-    APICall.makeAPIcall(`http://numbersapi.com/${number}`)
+    APICall.makeAPIcall(`http://numbersapi.com/${number}`) // Call API with user's choice
     .then(response => {
         res.json(response)
     })

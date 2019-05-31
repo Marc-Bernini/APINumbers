@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.use('/numbersApi', routes.numbersApi);
+app.use('/numbersApi', routes.numbersApi); // Route to the API
 
 app.listen(port, (err) => {
   if (err) {

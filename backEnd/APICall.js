@@ -6,6 +6,8 @@ module.exports = {
     ** which gets resolved or rejected based
     ** on the result from the API
     */
+
+// Function to make API call    
 makeAPIcall : url => {
 
     return new Promise((resolve, reject) => {
