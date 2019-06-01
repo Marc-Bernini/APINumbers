@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()">
+  <label for="user-date">Choose your date</label>
+
+<input
+  placeholder="Enter dates separated by commas (ex : 1/1, 4/13, 5/12)"
+  name="user-date"
+  [(ngModel)]='date'
+  type="text">
+
+  <button type="submit">Get interesting data about the dates</button>
+</form>
+
+<p *ngFor="let result of results">{{ result }}</p>

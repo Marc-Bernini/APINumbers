@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,9 +9,16 @@ export class GetNumberAPIService {
 
   url = 'numbersapi'; // API's route
 
+  resultTransfert: Array<object> = [];
+
   constructor(private http: HttpClient) { }
 
-  chooseDate(dateChoose) {
+  chooseDate(dateChoose): Observable<object> {
     return this.http.get(`${this.url}?number=${dateChoose}`); // Route to get data according to user's number
+  }
+
+  transfertResult(result) {
+    this.resultTransfert.push(result);
+    console.log(this.resultTransfert);
   }
 }
