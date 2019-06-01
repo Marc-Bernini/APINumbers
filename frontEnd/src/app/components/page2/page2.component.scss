@@ -1,0 +1,54 @@
+@import '../../../styles.scss';
+
+.answerPage2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+h3 {
+  padding: 0 0 0 1vw;
+  text-align: justify;
+  width: 50vw;
+}
+
+.datePage2, .historicalPage2 {
+  border: solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 1vw 0 1vw;
+  width: 25vw;
+}
+
+.formattingPage2{
+  display: flex;
+}
+
+p {
+  font-family: $police;
+  text-align: justify;
+}
+
+.titlePage2 {
+  border: solid black 1px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 1vw;
+  width: 52vw;
+}
+
+// Media Queries //
+
+@media screen and (max-width: 900px) {
+
+  .dateMobilePage2 {
+    display: none;
+  }
+
+  .historicalPage2, .titlePage2 {
+    width: 90vw;
+  }
+
+}

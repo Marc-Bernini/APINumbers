@@ -1,3 +1,20 @@
-<p *ngFor="let userResult of userResults">
-  {{ userResult }}
-</p>
+<div class="answerPage2">
+  <div class="titlePage2">
+    <h3 class="dateMobilePage2">Date</h3>
+
+    <h3>Historical facts</h3>
+  </div>
+
+  <div class="formattingPage2">
+    <div class="datePage2 dateMobilePage2">
+      <p *ngFor="let userDate of userDates">{{ userDate }}</p>
+    </div>
+
+    <div class="historicalPage2">
+      <p *ngFor="let userResult of userResults">{{ userResult }}</p>
+    </div>
+  </div>
+</div>
+
+
+

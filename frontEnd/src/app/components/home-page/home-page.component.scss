@@ -10,6 +10,7 @@ button {
   background: #0087f5;
   border-radius: 10px;
   color: whitesmoke;
+  font-style: inherit;
   padding: 1vh 1vw;
   width: 10vw;
 
@@ -19,13 +20,13 @@ button {
 }
 
 button, h3, input, label, p {
-  align-self: center;
   font-family: $police;
   font-weight: normal;
+  text-align: justify;
 }
 
 h3 {
-  padding: 0 0 0 1vw;
+  padding: 0 1vw;
   width: 50vw;
 }
 
@@ -34,7 +35,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0 0 0 1vw;
+  padding: 0 1vw;
   width: 25vw;
 }
 
@@ -55,10 +56,44 @@ input {
   width: 25vw;
 }
 
+label {
+  align-self: center;
+}
+
 .title {
   border: solid black 1px;
   display: flex;
   justify-content: space-evenly;
   padding: 0 1vw;
-  width: 50vw;
+  width: 52vw;
+}
+
+// Media queries //
+
+@media screen and (max-width: 900px) {
+  .dateMobile {
+    display: none;
+  }
+
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-around;
+    margin: 5vh auto;
+
+    button {
+      width: 35vw;
+      text-align: center;
+    }
+
+    input {
+      width: 75vw;
+    }
+  }
+
+  .historical, .title {
+    width: 90vw;
+  }
 }

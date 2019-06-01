@@ -27,7 +27,7 @@ export class HomePageComponent {
         this.dateChooses.push(userDate[i]); // Push user's date in an array to display it on template
         this.results.push(answer); // Push results in result's list
 
-        this.getNumber.transfertResult(answer); // Call service to push result and transfert it to page 2
+        this.getNumber.transfertResult(answer, userDate[i]); // Call service to push result and transfert it to page 2
         return this.results;
       });
     }
