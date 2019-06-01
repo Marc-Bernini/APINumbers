@@ -7,7 +7,7 @@
     [(ngModel)]='date'
     type="text">
 
-  <button type="submit">Get interesting data about the dates</button>
+  <button [disabled]="response" type="submit">Get interesting data about the dates</button>
 </form>
 
 <div class="answer">
