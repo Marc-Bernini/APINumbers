@@ -17,8 +17,7 @@ export class GetNumberAPIService {
     return this.http.get(`${this.url}?number=${dateChoose}`); // Route to get data according to user's number
   }
 
-  transfertResult(result) {
+  transfertResult(result) { // Method to transfert data in page2
     this.resultTransfert.push(result);
-    console.log(this.resultTransfert);
   }
 }

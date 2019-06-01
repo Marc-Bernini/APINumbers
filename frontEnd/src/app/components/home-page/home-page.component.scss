@@ -1,0 +1,64 @@
+@import '../../../styles.scss';
+
+.answer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background: #0087f5;
+  border-radius: 10px;
+  color: whitesmoke;
+  padding: 1vh 1vw;
+  width: 10vw;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+button, h3, input, label, p {
+  align-self: center;
+  font-family: $police;
+  font-weight: normal;
+}
+
+h3 {
+  padding: 0 0 0 1vw;
+  width: 50vw;
+}
+
+.date, .historical {
+  border: solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 0 0 1vw;
+  width: 25vw;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh auto;
+  width: 70vw;
+}
+
+.formatting{
+  display: flex;
+}
+
+input {
+  border-radius: 10px;
+  padding: 1vh 1vw;
+  width: 25vw;
+}
+
+.title {
+  border: solid black 1px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 1vw;
+  width: 50vw;
+}

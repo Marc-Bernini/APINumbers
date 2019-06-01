@@ -10,4 +10,20 @@
   <button type="submit">Get interesting data about the dates</button>
 </form>
 
-<p *ngFor="let result of results">{{ result }}</p>
+<div class="answer">
+  <div class="title">
+    <h3>Date</h3>
+
+    <h3>Historical facts</h3>
+  </div>
+
+  <div class="formatting">
+    <div class="date">
+      <p *ngFor="let dateChoose of dateChooses">{{ dateChoose }}</p>
+    </div>
+
+    <div class="historical">
+      <p  *ngFor="let result of results">{{ result }}</p>
+    </div>
+  </div>
+</div>
