@@ -22,11 +22,11 @@ button {
 button, h3, input, label, p {
   font-family: $police;
   font-weight: normal;
-  text-align: justify;
 }
 
 h3 {
   padding: 0 1vw;
+  text-align: justify;
   width: 50vw;
 }
 
@@ -34,7 +34,6 @@ h3 {
   border: solid 1px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   padding: 0 1vw;
   width: 25vw;
 }
@@ -53,11 +52,18 @@ form {
 input {
   border-radius: 10px;
   padding: 1vh 1vw;
+  text-align: justify;
   width: 25vw;
 }
 
 label {
   align-self: center;
+  text-align: justify;
+}
+
+p {
+  height: 70px;
+  text-align: justify;
 }
 
 .title {
