@@ -1,5 +1,17 @@
 <nav>
-  <a href routerLink="/">Home Page</a>
+  <a
+    [ngClass]="{activePage: home}"
+    (click)="userPage('home')"
+    href
+    routerLink="homePage">
+      Home Page
+  </a>
 
-  <a href routerLink="page2">Page 2</a>
+  <a
+    [ngClass]="{activePage: !home}"
+    (click)="userPage('page2')"
+    href
+    routerLink="page2">
+      Page 2
+  </a>
 </nav>

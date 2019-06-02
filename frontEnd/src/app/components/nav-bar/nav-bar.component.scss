@@ -5,10 +5,16 @@ a {
   text-decoration: none;
   color: black;
   margin: 0 5vw;
+  text-decoration: underline white;
 
   &:hover {
     text-decoration: underline;
+    transition-duration: 1s;
   }
+}
+
+.activePage {
+  text-decoration: underline;
 }
 
 nav {
