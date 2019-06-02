@@ -1,11 +1,12 @@
-<form (ngSubmit)="onSubmit()">
+<form (ngSubmit)="dateForm.valid && onSubmit()" #dateForm="ngForm">
   <label for="user-date">Choose your date</label>
 
   <input
     placeholder="Enter dates separated by commas (ex : 1/1, 4/13, 5/12)"
     name="user-date"
     [(ngModel)]='date'
-    type="text">
+    type="text"
+    required>
 
   <button [disabled]="response" type="submit">Get interesting data about the dates</button>
 </form>
