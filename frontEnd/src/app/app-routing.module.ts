@@ -5,7 +5,10 @@ import { Page2Component } from './components/page2/page2.component';
 
 const routes: Routes = [
   {
-    path: '', component: HomePageComponent
+    path: 'homePage', component: HomePageComponent
+  },
+  {
+    path: '', redirectTo: 'homePage', pathMatch: 'full'
   },
   {
     path: 'page2', component: Page2Component
